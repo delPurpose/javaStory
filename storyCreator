@@ -1,0 +1,35 @@
+class story {
+    public static void main(String[] args) {
+    	System.out.println("Welcome to the story making program!");
+    	System.out.println("You need to give us a couple of words that will help form the story.");
+
+    // Asks if the user needs definitions of the words
+    	String yes = "yes";
+    	String definitionQuestion = System.readLine("Do you need the definitions of words we need?");
+    if (definitionQuestion.equalsIgnoreCase(String yes)) {
+		System.out.printf("Verb - a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence");
+		System.out.printf("Noun - a word (other than a pronoun) used to identify any of a class of people, places, or things common noun, or to name a particular one of these proper noun.");
+		System.out.printf("Adverb - a word or phrase that modifies or qualifies an adjective, verb, or other adverb or a word group, expressing a relation of place, time, circumstance, manner, cause, degree, etc");
+    } else {
+    	System.out.println("You're really smart! Continuing.");
+    }
+
+    // Asks for adjective, verb, noun and an adverb
+    	String adjective = System.readLine("Enter an adjective: ");
+    	String verb = System.readLine("Enter a verb: ");
+    	String noun = System.readLine("Enter a noun: ");
+    	String adverb = System.readLine("Enter an adverb: ");
+
+    // Asks if the noun is a female or male and proceeds with the story in both cases
+    	String nounGender = System.readLine("Is the noun a female or male?");
+    if (nounGender = male) {
+    	System.out.printf("%s is very %s and I heard that he can %s really well!", noun, adverb, verb);
+    } else {
+    	System.out.printf("%s is very %s and I heard that she can %s really well!", noun, adverb, verb);
+    }
+
+    // Thanks the user for using the program and shuts itself down
+    	System.out.println("Thanks for using this program!");
+    	System.exit(0);
+    }
+}
